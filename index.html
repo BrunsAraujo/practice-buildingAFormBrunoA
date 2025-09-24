@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack Form</title>
+</head>
+<body>
+   <header> <h1 style="text-align: center;"> FeedBack Form</h1></header> 
+   <form method="post">
+    <fieldset>
+        <legend>User Information</legend><br/>
+        <label for="name">Full Name :</label> 
+        <input type="text" id="name" name="name" placeholder="Please Enter your Name" required /><br/><br/>
+        
+        <label for="email">Email        :</label> 
+        <input type="email" id="email" name="email" placeholder="test@test.com" required /><br/><br/>
+
+        
+        <label for="password">Password   :</label> 
+        <input type="password" id="password" name="password" placeholder="Please Enter your password" minlength="8" maxlength="15" autocomplete="current-password" /><br/>
+     </fieldset>
+     <br/>
+
+     <fieldset>
+        <legend>Choose Your FeedBack </legend><br/>
+        <label for="category">Categories</label> 
+        <select id="category" name="category" required>
+            <option value="" selected>Select One</option>
+            <option value="feature">Feature Request</option>
+            <option value="bugreport">Bug Reporting</option>
+            <option value="general">General FeedBack</option>
+        </select>
+        </fieldset>
+        <br/>
+    <fieldset>
+        <legend> Contact Methods</legend>
+        <label for="contactemail">Email</label>
+        <input type="radio" id="contactemail" name="contactemail" value="contactemail">
+        <label for="contacttext">Text Message</label>
+        <input type="radio" id="contacttext" name="contacttext" value="contacttext">
+        <label for="contactPhone">Phone</label>
+        <input type="radio" id="contactPhone" name="contactPhone" value="contactPhone">
+
+   </fieldset>
+   <br/>
+   <fieldset>
+    <legend>Additional Features</legend>
+    <label for="language-support">Language Support</label>
+
+   <input type="checkbox" id="language-support" name="Features" value="language-support">
+   <label for="dark-mode">dark-mode</label>
+   <input type="checkbox" id="dark-mode" name="Features" value="dark-mode">   
+   </fieldset>
+   <br/>
+   <fieldset>
+    <legend>Comments</legend>
+    <label for="comments">Comments</label>
+    <textarea id="comments" name="comments" rows="3" cols="50" placeholder="Please leave your valuable comments">
+
+    </textarea>
+   </fieldset>
+   <br/>
+   <button type="submit" >
+    Submit FeedBack
+   </button>
+
+   </form>
+</body>
+</html>
